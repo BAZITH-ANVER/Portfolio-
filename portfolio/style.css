@@ -1,0 +1,114 @@
+body{
+    overflow: hidden;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+
+.hero::after{
+    content: '';
+    position: absolute;
+    bottom: 90%;
+    right: -25%;
+    background: white;
+    width: 1100px;
+    height: 1100px;
+    z-index: -1;
+}
+
+.nav{
+    width: 100%;
+    padding: 15px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+}
+.nav ul li{
+    margin: 0px 40px;
+}
+.nav ul li a{
+    font-size: 18px;
+    color: aqua;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.nav ul li a:hover{
+    color: blueviolet;
+
+}
+.nav .logo img{
+    width: 100px;
+    cursor: pointer;
+}
+.containt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containt .men{
+    width: 540px;
+
+}
+.containt .left{
+    position: relative;
+    bottom: 40px;
+}
+.containt .left h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+
+}
+.containt .left button{
+    margin: 20px 0px;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background: red;
+    color: blueviolet;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.containt .left button:hover{
+    background: whitesmoke;
+
+}
+.social{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.social a i{
+    font-size: 16px;
+    margin: 20px 0px;
+    transition: all 0.3s ease;
+}
+.social a i:hover{
+    color: bisque;
+    transform: scale(1.2);
+}
+.social .bxl-instagram{
+    font-size: 30px;
+}
+.blur{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(100px);
+
+}
